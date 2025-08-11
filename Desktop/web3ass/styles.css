@@ -1,0 +1,107 @@
+/* ====== Reset & Box Model Setup ====== */
+* {
+    margin: 0; /* Removes default browser margins */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Ensures padding & border are inside element dimensions */
+}
+
+.logo-img {
+    height: 40px;   /* Controls logo size */
+    vertical-align: middle; /* Aligns image with text */
+    margin-right: 10px; /* Space between image and text */
+}
+
+/* ====== Body Styling ====== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #6ca9ee;
+    color: #333;
+}
+
+/* ====== Navbar Styling ====== */
+.navbar {
+    background-color: #004d99;
+    color: rgb(189, 228, 19);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 4px solid #003366; /* Border in box model */
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar .nav-links a:hover {
+    background-color: rgb(26, 148, 10);
+    color: #004d99;
+    border-radius: 5px;
+}
+
+/* ====== Section Styling ====== */
+.section {
+    padding: 40px 20px; /* Inside spacing */
+    margin: 20px auto; /* Outside spacing */
+    max-width: 900px;
+    background-color: white;
+    border: 2px solid #ddd; /* Border visualization */
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Section Headings */
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #004d99;
+}
+
+/* ====== Section Images ====== */
+.section-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 15px 0;
+    border: 3px solid #ccc; /* Shows image box boundaries */
+}
+
+/* ====== Project Cards ====== */
+.project-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* ====== Footer ====== */
+footer {
+    text-align: center;
+    background-color: #004d99;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
